@@ -10,10 +10,24 @@ const connect = (() => {
     conn.write("Name: NTS");
   })
 
+  // conn.on('connect', () => {
+  //   conn.write("Move: left");
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 2000);
 
+  //   setTimeout(() => {
+  //     conn.write("Move: right");
+  //   }, 3000);
+
+  //   setTimeout(() => {
+  //     conn.write("Move: down");
+  //   }, 4000);
+  
   conn.setEncoding('utf8');
 
   return conn;
+  // })
 
 })
 
