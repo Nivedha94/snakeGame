@@ -8,6 +8,7 @@ const connect = (() => {
   conn.on("connect", () => {
     console.log("connection has been established");
     conn.write("Name: NTS");
+    conn.write("Say: Hello");
   })
   
   // conn.on('connect', () => {
