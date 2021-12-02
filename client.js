@@ -9,7 +9,7 @@ const connect = (() => {
     console.log("connection has been established");
     conn.write("Name: NTS");
   })
-
+  
   // conn.on('connect', () => {
   //   conn.write("Move: left");
   //   setTimeout(() => {
