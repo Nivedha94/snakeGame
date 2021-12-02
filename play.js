@@ -1,19 +1,6 @@
-const net = require('net');
-const connect = (() => {
-  const conn = net.createConnection ({
-    host: '165.227.47.243',
-    port: 50541
-  });
-
-  conn.on("connect", () => {
-    console.log("connection has been established");
-  })
-
-  conn.setEncoding('utf8');
-
-  return conn;
-
-})
+const client = require('./client.js');
 
 console.log("Connecting...");
-connect();
+client.connect();
+
+
